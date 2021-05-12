@@ -2,6 +2,7 @@
 
 namespace Pantheon\Osiris;
 
+use Composer\Composer;
 use Composer\IO\IOInterface;
 use Composer\Script\Event;
 
@@ -25,7 +26,7 @@ class BuildScript
    */
     public static function postInstall($event = null)
     {
-        $projectRoot = getcwd();
+        $projectRoot = dirname(\Composer\Factory::getComposerFile());
         copy($projectRoot . "/web/info.php", $projectRoot . "/web/index.php");
         echo "POST INSTALL COMMAND EXECUTION: " . static::getSiteID() . PHP_EOL;
     }
@@ -47,7 +48,7 @@ class BuildScript
    */
     public static function postUpdate($event = null)
     {
-        $projectRoot = getcwd();
+        $projectRoot = dirname(\Composer\Factory::getComposerFile());
         copy($projectRoot . "/web/info.php", $projectRoot . "/web/index.php");
         echo "POST UPDATE COMMAND EXECUTION - " . static::getSiteID() . PHP_EOL;
     }
@@ -170,11 +171,7 @@ class BuildScript
                 [$major, $minor] = explode(".", PHP_VERSION);
                 return json_encode(["v" . $major . $minor]);
             } else {
-                $composer = json_decode(
-                    file_get_contents(getcwd() . "/../composer.json"),
-                    true
-                );
-                return $composer['extra']['osiris']['supported_versions'] ?? [];
+                return ComposerFile::getExtraValues()['supported_versions'] ?? [];
             }
         } catch (\Exception $e) {
             exit($e->getMessage());
