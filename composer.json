@@ -24,7 +24,6 @@
     },
     "scripts": {
         "post-install-cmd": [
-            "bash devops/setup-precommit.sh",
             "\\Pantheon\\Osiris\\BuildScript::postInstall"
         ],
         "post-update-cmd": [
