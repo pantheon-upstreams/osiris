@@ -63,8 +63,10 @@ class BuildScript
         $siteID = static::getSiteID();
         $cwd = getcwd();
         if (static::siteExists($siteID, $io) === false) {
+            $io->info('Site does not exist... creating.');
             static::createSite($siteID, $io);
         }
+
         $environments = [];
         $supportedVersions = static::getSupportedVersions($event);
         foreach ($supportedVersions as $version) {
@@ -114,7 +116,7 @@ class BuildScript
             $output,
             $status
         );
-        return ($status !== 1) || (count($output) > 0);
+        return ($status === 0);
     }
 
   /**

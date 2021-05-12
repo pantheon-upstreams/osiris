@@ -9,8 +9,8 @@
         "composer/composer": "^2.0",
         "drush/drush": "^10",
         "guzzlehttp/guzzle": "^6",
-        "html-elements/smart-webcomponents": "*",
-        "pantheon-upstreams/upstream-configuration": "*",
+        "html-elements/smart-webcomponents": "master",
+        "pantheon-upstreams/upstream-configuration": "^1",
         "psr/http-client": "^1.0",
         "squizlabs/php_codesniffer": "^4",
         "symfony/yaml": "^4",
@@ -42,9 +42,11 @@
         ],
         "pre-commit": [
             "composer validate -q",
-            "composer update --with-dependencies",
+            "composer update -W --optimize-autoloader --prefer-dist",
             "@code:fix",
-            "@code:lint"
+            "@code:lint",
+            "git add composer.json composer.lock",
+            "composer validate --strict"
         ],
         "test": [
             "phpunit"

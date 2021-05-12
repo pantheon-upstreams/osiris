@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "14694c326bb4c11120c2fb2531c591d9",
+    "content-hash": "8bd9fcd1696b3698ef4784d15e18a015",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -3365,11 +3365,11 @@
         },
         {
             "name": "pantheon-upstreams/upstream-configuration",
-            "version": "dev-main",
+            "version": "1.0.0",
             "dist": {
                 "type": "path",
                 "url": "upstream-configuration",
-                "reference": "07d637fbfe37092f9e4b8bd965b546d2af61db58"
+                "reference": "2222c3ba32920498b7f259e564cbb813f2633cfd"
             },
             "require": {
                 "composer/installers": "^1.8",
@@ -3381,6 +3381,7 @@
                 "zaporylie/composer-drupal-optimizations": "^1.2"
             },
             "type": "project",
+            "description": "Standard Pantheon Upstream",
             "transport-options": {
                 "relative": true
             }
