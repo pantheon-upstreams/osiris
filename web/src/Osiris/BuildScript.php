@@ -5,7 +5,6 @@ namespace Pantheon\Osiris;
 use Composer\IO\IOInterface;
 use Composer\Script\Event;
 
-
 /**
  * Class BuildScript
  *
@@ -20,7 +19,6 @@ class BuildScript
    * @var string
    */
     public static $PATTERN = '/\w{8}-\w{4}-\w{4}-\w{4}-\w{12}/m';
-
 
   /**
    * Post Install Hook.
@@ -134,7 +132,7 @@ class BuildScript
             "terminus site:create %s %s osiris --org=%s",
             $siteID,
             $siteID,
-            PANTHEON_INTERNAL_ORG
+            ComposerFile::getExtraValues()['organization']
         );
         if ($io->isVerbose()) {
             $io->write($command);

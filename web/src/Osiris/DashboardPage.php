@@ -88,8 +88,9 @@ class DashboardPage extends BootstrapPage
             [$major, $minor] = explode(".", PHP_VERSION);
             $versionList["v" . $major . $minor] = $_SERVER['HTTP_HOST'];
         } else {
-            $composer = json_decode(file_get_contents(getcwd() . "/../composer.json"), true);
-            $vids = $composer['extra']['osiris']['supported_versions'];
+            $vids = ComposerFile::getExtraValues()['supported_versions'];
+            print_r($vids);
+            exit();
             foreach ($vids as $vid) {
                 $versionList[$vid] = (
                   isset($_SERVER['PANTHEON_ENVIRONMENT']) ?
