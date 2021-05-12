@@ -1,0 +1,19 @@
+#!/usr/bin/env php
+<?php
+
+require_once("vendor/autoload.php");
+
+print_r($argv);
+
+echo PHP_EOL;
+
+if(!isset($argv[1]) || !isset($argv[2])) {
+  throw new \Exception("This script takes two arguments: The pantheon sitename and the php version number.");
+}
+
+
+
+$pantheon_instance = $argv[1];
+$php_version = $argv[2];
+
+\Pantheon\Osiris\VersionInstance::build($pantheon_instance, $php_version);

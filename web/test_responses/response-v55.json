@@ -1,0 +1,1396 @@
+{
+  "modules": {
+    "apc": {
+      "apc support": [
+        "emulated"
+      ]
+    },
+    "apcu": {
+      "version": [
+        "4.0.11"
+      ],
+      "apcu debugging": [
+        false
+      ],
+      "mmap support": [
+        true
+      ],
+      "mmap file mask": [
+        "no value"
+      ],
+      "credits": [
+        "apc.use_request_time",
+        true,
+        true
+      ],
+      "revision": [
+        "$revision: 328290 $"
+      ],
+      "build date": [
+        "apr 14 2021 17:34:08"
+      ],
+      "apc.enable_cli": [
+        false,
+        false
+      ],
+      "apc.enabled": [
+        true,
+        true
+      ],
+      "apc.gc_ttl": [
+        "3600",
+        "3600"
+      ],
+      "apc.rfc1867": [
+        false,
+        false
+      ],
+      "apc.rfc1867_ttl": [
+        "3600",
+        "3600"
+      ],
+      "apc.serializer": [
+        "php",
+        "php"
+      ],
+      "apc.shm_size": [
+        "128m",
+        "128m"
+      ],
+      "apc.smart": [],
+      "apc.ttl": [],
+      "apc.writable": [
+        "\/tmp",
+        "\/tmp"
+      ]
+    },
+    "apm": {
+      "apm support": [
+        true
+      ],
+      "version": [
+        "1.0.0beta2"
+      ],
+      "credits": [
+        "apm.stacktrace_enabled",
+        true,
+        true
+      ],
+      "apm.enabled": [
+        true,
+        true
+      ],
+      "apm.http_server": [
+        "https:\/\/api.live.getpantheon.com:8443\/sites\/d39cf6dc-c1be-405c-b387-209f8f4419fa\/environments\/v55\/events",
+        "https:\/\/api.live.getpantheon.com:8443\/sites\/d39cf6dc-c1be-405c-b387-209f8f4419fa\/environments\/v55\/events"
+      ],
+      "apm.mysql_db": [
+        "apm",
+        "apm"
+      ],
+      "apm.mysql_host": [
+        "localhost",
+        "localhost"
+      ],
+      "apm.mysql_pass": [
+        "no value",
+        "no value"
+      ],
+      "apm.mysql_port": [],
+      "apm.mysql_user": [
+        "root",
+        "root"
+      ]
+    },
+    "bcmath": {
+      "bcmath support": [
+        true
+      ],
+      "bcmath.scale": []
+    },
+    "bz2": {
+      "bzip2 support": [
+        true
+      ],
+      "credits": [
+        "stream filter support",
+        "bzip2.decompress, bzip2.compress"
+      ],
+      "bzip2 version": [
+        "1.0.6, 6-sept-2010"
+      ]
+    },
+    "calendar": {
+      "credits": [
+        "calendar support",
+        true
+      ]
+    },
+    "cgi-fcgi": {
+      "php-fpm": [
+        "active"
+      ],
+      "credits": [
+        "fastcgi.error_header",
+        "no value",
+        "no value"
+      ],
+      "cgi.nph": [],
+      "fastcgi.logging": [
+        "1",
+        "1"
+      ],
+      "fpm.config": [
+        "no value",
+        "no value"
+      ]
+    },
+    "core": {
+      "php version": [
+        "5.5.38"
+      ],
+      "allow_url_fopen": [
+        true,
+        true
+      ],
+      "credits": [
+        "zend.script_encoding",
+        "no value",
+        "no value"
+      ],
+      "asp_tags": [
+        false,
+        false
+      ],
+      "browscap": [
+        "no value",
+        "no value"
+      ],
+      "default_charset": [
+        "utf-8",
+        "utf-8"
+      ],
+      "disable_classes": [
+        "no value",
+        "no value"
+      ],
+      "display_errors": [
+        true,
+        true
+      ],
+      "doc_root": [
+        "no value",
+        "no value"
+      ],
+      "docref_ext": [
+        "no value",
+        "no value"
+      ],
+      "docref_root": [
+        "no value",
+        "no value"
+      ],
+      "enable_dl": [
+        false,
+        false
+      ],
+      "error_log": [
+        "\/logs\/php\/php-error.log",
+        "\/logs\/php\/php-error.log"
+      ],
+      "error_reporting": [
+        "24575",
+        "24575"
+      ],
+      "exit_on_timeout": [
+        false,
+        false
+      ],
+      "expose_php": [
+        false,
+        false
+      ],
+      "extension_dir": [
+        "\/php",
+        "\/php"
+      ],
+      "file_uploads": [
+        true,
+        true
+      ],
+      "highlight.html": [
+        "#000000",
+        "#000000"
+      ],
+      "html_errors": [
+        false,
+        false
+      ],
+      "implicit_flush": [
+        false,
+        false
+      ],
+      "include_path": [
+        ".:\/usr\/share\/pear:\/usr\/share\/php",
+        ".:\/usr\/share\/pear:\/usr\/share\/php"
+      ],
+      "log_errors": [
+        true,
+        true
+      ],
+      "mail.log": [
+        "no value",
+        "no value"
+      ],
+      "max_input_time": [
+        "900",
+        "900"
+      ],
+      "max_input_vars": [
+        "10000",
+        "10000"
+      ],
+      "memory_limit": [
+        "256m",
+        "256m"
+      ],
+      "open_basedir": [
+        "no value",
+        "no value"
+      ],
+      "output_handler": [
+        "no value",
+        "no value"
+      ],
+      "post_max_size": [
+        "100m",
+        "100m"
+      ],
+      "precision": [
+        "14",
+        "14"
+      ],
+      "report_memleaks": [
+        true,
+        true
+      ],
+      "request_order": [
+        "gp",
+        "gp"
+      ],
+      "sendmail_from": [
+        "no value",
+        "no value"
+      ],
+      "sendmail_path": [
+        "\/usr\/sbin\/sendmail\u00a0-t\u00a0-i\u00a0",
+        "\/usr\/sbin\/sendmail\u00a0-t\u00a0-i\u00a0"
+      ],
+      "short_open_tag": [
+        false,
+        false
+      ],
+      "smtp": [
+        "localhost",
+        "localhost"
+      ],
+      "smtp_port": [
+        "25",
+        "25"
+      ],
+      "sql.safe_mode": [
+        false,
+        false
+      ],
+      "sys_temp_dir": [
+        "\/tmp",
+        "\/tmp"
+      ],
+      "track_errors": [
+        false,
+        false
+      ],
+      "upload_tmp_dir": [
+        "no value",
+        "no value"
+      ],
+      "user_dir": [
+        "no value",
+        "no value"
+      ],
+      "variables_order": [
+        "gpcs",
+        "gpcs"
+      ],
+      "xmlrpc_errors": [
+        false,
+        false
+      ],
+      "zend.enable_gc": [
+        true,
+        true
+      ],
+      "zend.multibyte": [
+        false,
+        false
+      ]
+    },
+    "ctype": {
+      "ctype functions": [
+        true
+      ]
+    },
+    "curl": {
+      "curl support": [
+        true
+      ],
+      "credits": [
+        "curl information",
+        "7.61.1"
+      ],
+      "age": [
+        "4"
+      ],
+      "features": [],
+      "asynchdns": [
+        "yes"
+      ],
+      "charconv": [
+        "no"
+      ],
+      "debug": [
+        "no"
+      ],
+      "gss-negotiate": [
+        "no"
+      ],
+      "idn": [
+        "yes"
+      ],
+      "ipv6": [
+        "yes"
+      ],
+      "krb4": [
+        "no"
+      ],
+      "largefile": [
+        "yes"
+      ],
+      "libz": [
+        "yes"
+      ],
+      "ntlm": [
+        "yes"
+      ],
+      "ntlmwb": [
+        "yes"
+      ],
+      "spnego": [
+        "yes"
+      ],
+      "ssl": [
+        "yes"
+      ],
+      "sspi": [
+        "no"
+      ],
+      "tls-srp": [
+        "yes"
+      ],
+      "protocols": [
+        "dict, file, ftp, ftps, gopher, http, https, imap, imaps, ldap, ldaps, pop3, pop3s, rtsp, scp, sftp, smb, smbs, smtp, smtps, telnet, tftp"
+      ],
+      "host": [
+        "x86_64-redhat-linux-gnu"
+      ],
+      "ssl version": [
+        "openssl\/1.1.1g"
+      ],
+      "zlib version": [
+        "1.2.11"
+      ],
+      "libssh version": [
+        "libssh\/0.9.4\/openssl\/zlib"
+      ]
+    },
+    "date": {
+      "credits": [
+        "date.sunset_zenith",
+        "90.583333",
+        "90.583333"
+      ],
+      "date.timezone": [
+        "utc",
+        "utc"
+      ]
+    },
+    "dom": {
+      "dom\/xml": [
+        true
+      ],
+      "credits": [
+        "xpointer support",
+        true
+      ],
+      "libxml version": [
+        "2.9.7"
+      ],
+      "html support": [
+        true
+      ],
+      "xpath support": [
+        true
+      ],
+      "schema support": [
+        true
+      ],
+      "relaxng support": [
+        true
+      ]
+    },
+    "ereg": {
+      "regex library": [
+        "bundled library enabled"
+      ]
+    },
+    "exif": {
+      "exif support": [
+        true
+      ],
+      "exif version": [
+        "1.4 $id: 74b652b3ebe78882b8006d49c17cac029fe8a5d0 $"
+      ],
+      "credits": [
+        "exif.encode_unicode",
+        "iso-8859-15",
+        "iso-8859-15"
+      ],
+      "exif.encode_jis": [
+        "no value",
+        "no value"
+      ]
+    },
+    "fileinfo": {
+      "credits": [
+        "fileinfo support",
+        true
+      ],
+      "version": [
+        "1.0.5"
+      ]
+    },
+    "filter": {
+      "credits": [
+        "filter.default_flags",
+        "no value",
+        "no value"
+      ],
+      "revision": [
+        "$id: fbeb8bbbf6cc97f568996dac46e13e48e2907326 $"
+      ],
+      "filter.default": [
+        "unsafe_raw",
+        "unsafe_raw"
+      ]
+    },
+    "ftp": {
+      "ftp support": [
+        true
+      ]
+    },
+    "gd": {
+      "gd support": [
+        true
+      ],
+      "gd version": [
+        "bundled (2.1.0 compatible)"
+      ],
+      "credits": [
+        "gd.jpeg_ignore_warning"
+      ],
+      "t1lib support": [
+        true
+      ],
+      "jpeg support": [
+        true
+      ],
+      "libjpeg version": [
+        "6b"
+      ],
+      "png support": [
+        true
+      ],
+      "libpng version": [
+        "1.6.34"
+      ],
+      "wbmp support": [
+        true
+      ],
+      "xpm support": [
+        true
+      ],
+      "libxpm version": [
+        "30411"
+      ],
+      "xbm support": [
+        true
+      ]
+    },
+    "gettext": {
+      "gettext support": [
+        true
+      ]
+    },
+    "gmp": {
+      "gmp support": [
+        true
+      ],
+      "gmp version": [
+        "6.1.2"
+      ]
+    },
+    "hash": {
+      "hash support": [
+        true
+      ],
+      "hashing engines": [
+        "md2 md4 md5 sha1 sha224 sha256 sha384 sha512 ripemd128 ripemd160 ripemd256 ripemd320 whirlpool tiger128,3 tiger160,3 tiger192,3 tiger128,4 tiger160,4 tiger192,4 snefru snefru256 gost adler32 crc32 crc32b fnv132 fnv164 joaat haval128,3 haval160,3 haval192,3 haval224,3 haval256,3 haval128,4 haval160,4 haval192,4 haval224,4 haval256,4 haval128,5 haval160,5 haval192,5 haval224,5 haval256,5"
+      ]
+    },
+    "iconv": {
+      "iconv support": [
+        true
+      ],
+      "credits": [
+        "iconv.output_encoding",
+        "iso-8859-1",
+        "iso-8859-1"
+      ]
+    },
+    "imagick": {
+      "credits": [
+        "imagick.skip_version_check"
+      ],
+      "imagick classes": [
+        "imagick, imagickdraw, imagickpixel, imagickpixeliterator, imagickkernel"
+      ]
+    },
+    "imap": {
+      "credits": [
+        "kerberos support",
+        true
+      ],
+      "ssl support": [
+        true
+      ]
+    },
+    "intl": {
+      "version": [
+        "1.1.0"
+      ],
+      "icu version": [
+        "60.3"
+      ],
+      "credits": [
+        "intl.use_exceptions"
+      ]
+    },
+    "json": {
+      "json support": [
+        true
+      ],
+      "json version": [
+        "1.2.1"
+      ]
+    },
+    "ldap": {
+      "ldap support": [
+        true
+      ],
+      "rcs version": [
+        "$id: 4db15e5bb92af06390fd31ab784837ab21a3d2ce $"
+      ],
+      "total links": [
+        "0\/unlimited"
+      ],
+      "api version": [
+        "3001"
+      ],
+      "vendor name": [
+        "openldap"
+      ],
+      "vendor version": [
+        "20446"
+      ],
+      "ldap.max_links": [
+        "unlimited",
+        "unlimited"
+      ]
+    },
+    "libxml": {
+      "libxml support": [
+        "active"
+      ],
+      "credits": [
+        "libxml loaded version",
+        "20907"
+      ],
+      "libxml streams": [
+        true
+      ]
+    },
+    "mbstring": {
+      "credits": [
+        "mbstring.substitute_character",
+        "no value",
+        "no value"
+      ],
+      "libmbfl version": [
+        "1.3.2"
+      ]
+    },
+    "mcrypt": {
+      "version": [
+        "2.5.8"
+      ],
+      "api no": [
+        "20021217"
+      ],
+      "credits": [
+        "mcrypt.modes_dir",
+        "no value",
+        "no value"
+      ],
+      "supported modes": [
+        "cbc cfb ctr ecb ncfb nofb ofb stream"
+      ]
+    },
+    "mhash": {
+      "mhash support": [
+        true
+      ],
+      "credits": [
+        "mhash api version",
+        "emulated support"
+      ]
+    },
+    "mysql": {
+      "credits": [
+        "mysql.trace_mode",
+        false,
+        false
+      ],
+      "active links": [],
+      "mysql.max_links": [
+        "unlimited",
+        "unlimited"
+      ]
+    },
+    "mysqli": {
+      "credits": [
+        "mysqli.reconnect",
+        false,
+        false
+      ],
+      "active links": []
+    },
+    "mysqlnd": {
+      "version": [
+        "mysqlnd 5.0.11-dev - 20120503 - $id: 15d5c781cfcad91193dceae1d2cdd127674ddb3e $"
+      ],
+      "compression": [
+        "supported"
+      ],
+      "core ssl": [
+        "supported"
+      ],
+      "extended ssl": [
+        "supported"
+      ],
+      "credits": [
+        "bytes_received_real_data_ps"
+      ],
+      "read timeout": [
+        "31536000"
+      ],
+      "tracing": [
+        "n\/a"
+      ],
+      "loaded plugins": [
+        "mysqlnd,debug_trace,auth_plugin_mysql_native_password,auth_plugin_mysql_clear_password,auth_plugin_sha256_password"
+      ],
+      "api extensions": [
+        "mysql,mysqli,pdo_mysql"
+      ],
+      "bytes_sent": [
+        "318"
+      ],
+      "bytes_received": [
+        "260"
+      ],
+      "packets_sent": [
+        "8"
+      ],
+      "no_index_used": [
+        "1"
+      ],
+      "bad_index_used": [],
+      "slow_queries": [],
+      "buffered_sets": [
+        "1"
+      ],
+      "unbuffered_sets": [],
+      "flushed_ps_sets": [],
+      "rows_skipped_ps": [],
+      "connect_success": [
+        "1"
+      ],
+      "connect_failure": [],
+      "reconnect": [],
+      "explicit_close": [
+        "1"
+      ],
+      "implicit_close": [],
+      "mem_efree_count": [],
+      "mem_free_count": [],
+      "mem_free_amount": [],
+      "com_quit": [
+        "1"
+      ],
+      "com_init_db": [],
+      "com_query": [
+        "2"
+      ],
+      "com_field_list": [],
+      "com_create_db": [],
+      "com_drop_db": [],
+      "com_refresh": [],
+      "com_shutdown": [],
+      "com_statistics": [],
+      "com_connect": [],
+      "com_debug": [],
+      "com_ping": [],
+      "com_time": [],
+      "com_change_user": [],
+      "com_binlog_dump": [],
+      "com_table_dump": [],
+      "com_connect_out": [],
+      "com_stmt_close": [],
+      "com_stmt_reset": [],
+      "com_stmt_fetch": [],
+      "com_deamon": []
+    },
+    "oauth": {
+      "credits": [
+        "request engine support",
+        "php_streams, curl"
+      ],
+      "source version": [
+        "$id: oauth.c 325799 2012-05-24 21:07:51z jawed $"
+      ],
+      "version": [
+        "1.2.3"
+      ]
+    },
+    "odbc": {
+      "credits": [
+        "odbc.max_persistent",
+        "unlimited",
+        "unlimited"
+      ],
+      "active links": [],
+      "odbc library": [
+        "unixodbc"
+      ],
+      "odbc_include": [
+        "-i\/usr\/include"
+      ],
+      "odbc_lflags": [
+        "-l\/usr\/lib64"
+      ],
+      "odbc_libs": [
+        "-lodbc"
+      ],
+      "odbc.default_db": [
+        "no value",
+        "no value"
+      ],
+      "odbc.default_pw": [
+        "no value",
+        "no value"
+      ],
+      "odbc.defaultlrl": [
+        "return up to 4096 bytes",
+        "return up to 4096 bytes"
+      ],
+      "odbc.max_links": [
+        "unlimited",
+        "unlimited"
+      ]
+    },
+    "openssl": {
+      "openssl support": [
+        true
+      ],
+      "credits": [
+        "openssl header version",
+        "openssl 1.0.2o-fips  27 mar 2018"
+      ]
+    },
+    "pcre": {
+      "credits": [
+        "pcre.recursion_limit",
+        "100000",
+        "100000"
+      ]
+    },
+    "pdo": {
+      "pdo drivers": [
+        "mysql, pgsql, sqlite"
+      ]
+    },
+    "pdo_mysql": {
+      "credits": [
+        "pdo_mysql.default_socket",
+        "\/tmp\/mysql.sock",
+        "\/tmp\/mysql.sock"
+      ]
+    },
+    "pdo_pgsql": {
+      "credits": [
+        "postgresql(libpq) version",
+        "12.4"
+      ],
+      "module version": [
+        "1.0.2"
+      ],
+      "revision": [
+        "$id: af568c8ae63693bc2b766337bd4731078e62f9b4 $"
+      ]
+    },
+    "pdo_sqlite": {
+      "sqlite library": [
+        "3.8.10.2"
+      ]
+    },
+    "pgsql": {
+      "credits": [
+        "pgsql.max_persistent",
+        "unlimited",
+        "unlimited"
+      ],
+      "ssl support": [
+        false
+      ],
+      "active links": [],
+      "pgsql.max_links": [
+        "unlimited",
+        "unlimited"
+      ]
+    },
+    "phar": {
+      "credits": [
+        "phar.require_hash",
+        true,
+        true
+      ],
+      "svn revision": [
+        "$id: 17b0affd86ff751cb8e6046d04d91435b53fc6b8 $"
+      ],
+      "phar.cache_list": [
+        "no value",
+        "no value"
+      ],
+      "phar.readonly": [
+        true,
+        true
+      ]
+    },
+    "redis": {
+      "redis version": [
+        "4.2.0"
+      ],
+      "credits": [
+        "redis.session.locking_enabled"
+      ]
+    },
+    "reflection": {
+      "version": [
+        "$id: dc76d2fe0f3e9c327c1d4ca617d94e26c7fae98d $"
+      ]
+    },
+    "session": {
+      "session support": [
+        true
+      ],
+      "credits": [
+        "session.use_trans_sid"
+      ],
+      "session.name": [
+        "phpsessid",
+        "phpsessid"
+      ]
+    },
+    "shmop": {
+      "shmop support": [
+        true
+      ]
+    },
+    "simplexml": {
+      "revision": [
+        "$id: 6b8e23a01a85046737ef7d31346da5164505c179 $"
+      ],
+      "schema support": [
+        true
+      ]
+    },
+    "soap": {
+      "soap client": [
+        true
+      ],
+      "soap server": [
+        true
+      ],
+      "soap.wsdl_cache": [
+        "1",
+        "1"
+      ],
+      "credits": [
+        "soap.wsdl_cache_ttl",
+        "86400",
+        "86400"
+      ]
+    },
+    "sockets": {
+      "sockets support": [
+        true
+      ]
+    },
+    "spl": {
+      "interfaces": [
+        "countable, outeriterator, recursiveiterator, seekableiterator, splobserver, splsubject"
+      ],
+      "classes": [
+        "appenditerator, arrayiterator, arrayobject, badfunctioncallexception, badmethodcallexception, cachingiterator, callbackfilteriterator, directoryiterator, domainexception, emptyiterator, filesystemiterator, filteriterator, globiterator, infiniteiterator, invalidargumentexception, iteratoriterator, lengthexception, limititerator, logicexception, multipleiterator, norewinditerator, outofboundsexception, outofrangeexception, overflowexception, parentiterator, rangeexception, recursivearrayiterator, recursivecachingiterator, recursivecallbackfilteriterator, recursivedirectoryiterator, recursivefilteriterator, recursiveiteratoriterator, recursiveregexiterator, recursivetreeiterator, regexiterator, runtimeexception, spldoublylinkedlist, splfileinfo, splfileobject, splfixedarray, splheap, splminheap, splmaxheap, splobjectstorage, splpriorityqueue, splqueue, splstack, spltempfileobject, underflowexception, unexpectedvalueexception"
+      ]
+    },
+    "sqlite3": {
+      "credits": [
+        "sqlite3.extension_dir",
+        "no value",
+        "no value"
+      ],
+      "sqlite library": [
+        "3.8.10.2"
+      ]
+    },
+    "standard": {
+      "credits": [
+        "url_rewriter.tags",
+        "a=href,area=href,frame=src,form=,fieldset=",
+        "a=href,area=href,frame=src,form=,fieldset="
+      ],
+      "assert.active": [],
+      "assert.bail": [],
+      "assert.callback": [
+        "no value",
+        "no value"
+      ],
+      "assert.warning": [
+        "1",
+        "1"
+      ],
+      "from": [
+        "no value",
+        "no value"
+      ],
+      "user_agent": [
+        "no value",
+        "no value"
+      ]
+    },
+    "tidy": {
+      "libtidy release": [
+        "2017\/11\/25"
+      ],
+      "credits": [
+        "tidy.default_config",
+        "no value",
+        "no value"
+      ]
+    },
+    "tokenizer": {
+      "credits": [
+        "tokenizer support",
+        true
+      ]
+    },
+    "wddx": {
+      "credits": [
+        "wddx session serializer",
+        true
+      ]
+    },
+    "xml": {
+      "xml support": [
+        "active"
+      ],
+      "credits": [
+        "xml namespace support",
+        "active"
+      ],
+      "libxml2 version": [
+        "2.9.7"
+      ]
+    },
+    "xmlreader": {
+      "xmlreader": [
+        true
+      ]
+    },
+    "xmlwriter": {
+      "xmlwriter": [
+        true
+      ]
+    },
+    "xsl": {
+      "xsl": [
+        true
+      ],
+      "libxslt version": [
+        "1.1.32"
+      ],
+      "credits": [
+        "libexslt version",
+        "1.1.32"
+      ],
+      "exslt": [
+        true
+      ]
+    },
+    "zend opcache": {
+      "opcode caching": [
+        "up and running"
+      ],
+      "optimization": [
+        true
+      ],
+      "startup": [
+        "ok"
+      ],
+      "credits": [
+        "opcache.validate_timestamps",
+        true,
+        true
+      ],
+      "cache hits": [],
+      "cache misses": [
+        "5"
+      ],
+      "used memory": [
+        "12523016"
+      ],
+      "free memory": [
+        "121694712"
+      ],
+      "wasted memory": [],
+      "cached scripts": [
+        "5"
+      ],
+      "cached keys": [
+        "6"
+      ],
+      "max keys": [
+        "32531"
+      ],
+      "oom restarts": [],
+      "manual restarts": [],
+      "opcache.enable": [
+        true,
+        true
+      ],
+      "opcache.use_cwd": [
+        true,
+        true
+      ]
+    },
+    "zip": {
+      "zip": [
+        true
+      ],
+      "credits": [
+        "extension version",
+        "$id: 57d060f4ff33b65935fb35c9950c3b3979486d58 $"
+      ],
+      "zip version": [
+        "1.11.0"
+      ],
+      "libzip version": [
+        "0.10.1"
+      ]
+    },
+    "zlib": {
+      "stream wrapper": [
+        "compress.zlib:\/\/"
+      ],
+      "stream filter": [
+        "zlib.inflate, zlib.deflate"
+      ],
+      "credits": [
+        "zlib.output_handler",
+        "no value",
+        "no value"
+      ],
+      "linked version": [
+        "1.2.11"
+      ]
+    },
+    "additional modules": {
+      "credits": [
+        "windows infrastructure",
+        "alex schoenmaker"
+      ],
+      "windows port": [
+        "shane caraveo, zeev suraski, wez furlong, pierre-alain joye"
+      ],
+      "output handler": [
+        "zeev suraski, thies c. arntzen, marcus boerger, michael wallner"
+      ],
+      "aolserver": [
+        "sascha schumann"
+      ],
+      "apache 1.3": [
+        "rasmus lerdorf, zeev suraski, stig bakken, david sklar"
+      ],
+      "caudium \/ roxen": [
+        "david hedbor"
+      ],
+      "cgi \/ fastcgi": [
+        "rasmus lerdorf, stig bakken, shane caraveo, dmitry stogov"
+      ],
+      "cli": [
+        "edin kadribasic, marcus boerger, johannes schlueter, moriyoshi koizumi, xinchen hui"
+      ],
+      "continuity": [
+        "alex leigh (based on nsapi code)"
+      ],
+      "embed": [
+        "edin kadribasic"
+      ],
+      "isapi": [
+        "andi gutmans, zeev suraski"
+      ],
+      "litespeed": [
+        "george wang"
+      ],
+      "nsapi": [
+        "jayakumar muthukumarasamy, uwe schindler"
+      ],
+      "phttpd": [
+        "thies c. arntzen"
+      ],
+      "pi3web": [
+        "holger zimmermann"
+      ],
+      "sendmail milter": [
+        "harald radi"
+      ],
+      "thttpd": [
+        "sascha schumann"
+      ],
+      "tux": [
+        "sascha schumann"
+      ],
+      "webjames": [
+        "alex waugh"
+      ],
+      "bc math": [
+        "andi gutmans"
+      ],
+      "bzip2": [
+        "sterling hughes"
+      ],
+      "calendar": [
+        "shane caraveo, colin viebrock, hartmut holzgraefe, wez furlong"
+      ],
+      "com and .net": [
+        "wez furlong"
+      ],
+      "ctype": [
+        "hartmut holzgraefe"
+      ],
+      "curl": [
+        "sterling hughes"
+      ],
+      "dba": [
+        "sascha schumann, marcus boerger"
+      ],
+      "dom": [
+        "christian stocker, rob richards, marcus boerger"
+      ],
+      "enchant": [
+        "pierre-alain joye, ilia alshanetsky"
+      ],
+      "ereg": [
+        "rasmus lerdorf, jim winstead, jaakko hyv\u00c3\u00a4tti"
+      ],
+      "exif": [
+        "rasmus lerdorf, marcus boerger"
+      ],
+      "fileinfo": [
+        "ilia alshanetsky, pierre alain joye, scott macvicar, derick rethans"
+      ],
+      "ftp": [
+        "stefan esser, andrew skalski"
+      ],
+      "gd imaging": [
+        "rasmus lerdorf, stig bakken, jim winstead, jouni ahto, ilia alshanetsky, pierre-alain joye, marcus boerger"
+      ],
+      "gettext": [
+        "alex plotnick"
+      ],
+      "gnu gmp support": [
+        "stanislav malyshev"
+      ],
+      "iconv": [
+        "rui hirokawa, stig bakken, moriyoshi koizumi"
+      ],
+      "imap": [
+        "rex logan, mark musone, brian wang, kaj-michael lang, antoni pamies olive, rasmus lerdorf, andrew skalski, chuck hagenbuch, daniel r kalowsky"
+      ],
+      "input filter": [
+        "rasmus lerdorf, derick rethans, pierre-alain joye, ilia alshanetsky"
+      ],
+      "interbase": [
+        "jouni ahto, andrew avdeev, ard biesheuvel"
+      ],
+      "json": [
+        "omar kilani, scott macvicar"
+      ],
+      "ldap": [
+        "amitay isaacs, eric warnke, rasmus lerdorf, gerrit thomson, stig venaas"
+      ],
+      "libxml": [
+        "christian stocker, rob richards, marcus boerger, wez furlong, shane caraveo"
+      ],
+      "mcrypt": [
+        "sascha schumann, derick rethans"
+      ],
+      "ms sql": [
+        "frank m. kromann"
+      ],
+      "mysql": [
+        "zeev suraski, zak greant, georg richter, andrey hristov"
+      ],
+      "mysqli": [
+        "zak greant, georg richter, andrey hristov, ulf wendel"
+      ],
+      "mysqlnd": [
+        "andrey hristov, ulf wendel, georg richter, johannes schl\u00c3\u00bcter"
+      ],
+      "oci8": [
+        "stig bakken, thies c. arntzen, andy sautins, david benson, maxim maletsky, harald radi, antony dovgal, andi gutmans, wez furlong, christopher jones, oracle corporation"
+      ],
+      "odbc": [
+        "stig bakken, andreas karajannis, frank m. kromann, daniel r. kalowsky"
+      ],
+      "openssl": [
+        "stig venaas, wez furlong, sascha kettler, scott macvicar"
+      ],
+      "pcntl": [
+        "jason greene, arnaud le blanc"
+      ],
+      "php archive": [
+        "gregory beaver, marcus boerger"
+      ],
+      "php hash": [
+        "sara golemon, rasmus lerdorf, stefan esser, michael wallner, scott macvicar"
+      ],
+      "posix": [
+        "kristian koehntopp"
+      ],
+      "postgresql": [
+        "jouni ahto, zeev suraski, yasuo ohgaki, chris kings-lynne"
+      ],
+      "pspell": [
+        "vlad krupin"
+      ],
+      "readline": [
+        "thies c. arntzen"
+      ],
+      "recode": [
+        "kristian koehntopp"
+      ],
+      "reflection": [
+        "marcus boerger, timm friebe, george schlossnagle, andrei zmievski, johannes schlueter"
+      ],
+      "sessions": [
+        "sascha schumann, andrei zmievski"
+      ],
+      "simplexml": [
+        "sterling hughes, marcus boerger, rob richards"
+      ],
+      "snmp": [
+        "rasmus lerdorf, harrie hazewinkel, mike jackson, steven lawrance, johann hanne, boris lytochkin"
+      ],
+      "soap": [
+        "brad lafountain, shane caraveo, dmitry stogov"
+      ],
+      "sockets": [
+        "chris vandomelen, sterling hughes, daniel beulshausen, jason greene"
+      ],
+      "spl": [
+        "marcus boerger, etienne kneuss"
+      ],
+      "sqlite3": [
+        "scott macvicar, ilia alshanetsky, brad dewar"
+      ],
+      "sybase-ct": [
+        "zeev suraski, tom may, timm friebe"
+      ],
+      "tidy": [
+        "john coggeshall, ilia alshanetsky"
+      ],
+      "tokenizer": [
+        "andrei zmievski, johannes schlueter"
+      ],
+      "wddx": [
+        "andrei zmievski"
+      ],
+      "xml": [
+        "stig bakken, thies c. arntzen, sterling hughes"
+      ],
+      "xmlreader": [
+        "rob richards"
+      ],
+      "xmlrpc": [
+        "dan libby"
+      ],
+      "xmlwriter": [
+        "rob richards, pierre-alain joye"
+      ],
+      "xsl": [
+        "christian stocker, rob richards"
+      ],
+      "zip": [
+        "pierre-alain joye"
+      ],
+      "zlib": [
+        "rasmus lerdorf, stefan roehrich, zeev suraski, jade nicoletti, michael wallner"
+      ],
+      "authors": [
+        "mehdi achour, friedhelm betz, antony dovgal, nuno lopes, hannes magnusson, georg richter, damien seguy, jakub vrana"
+      ],
+      "editor": [
+        "philip olson"
+      ]
+    },
+    "php license": {
+      "credits": [
+        "this program is free software; you can redistribute it and\/or modify it under the terms of the php license as published by the php group and included in the distribution in the file:  license\n\nthis program is distributed in the hope that it will be useful, but without any warranty; without even the implied warranty of merchantability or fitness for a particular purpose.\n\nif you did not receive a copy of the php license, or have any questions about php licensing, please contact license@php.net."
+      ]
+    }
+  },
+  "gd": "<h1>Testing GD Page<\/h1>\n<img src=\"https:\/\/v55-amadioha-24.pantheonsite.io\/\/images\/flowers.png?blah=607cb478293ae\"\/>\n<br>\n<img src=\"https:\/\/v55-amadioha-24.pantheonsite.io\/\/rotated?blah=607cb478293ae\">\n",
+  "imagick": "<style type=\"text\/css\">\n  img {\n    border: 3px solid black;\n    margin: 8px;\n    vertical-align: middle;\n  }\n\n  #images {\n    font-size: 48pt;\n    font-weight: bold;\n  }\n<\/style>\n\n<div id=\"images\">\n<img src=\"https:\/\/v55-amadioha-24.pantheonsite.io\/\/images\/sunrise.png\" alt=\"background\"\/>\n+\n<img src=\"https:\/\/v55-amadioha-24.pantheonsite.io\/\/images\/pantheon.png\" alt=\"pantheon\"\/>\n=\n<img src=\"https:\/\/v55-amadioha-24.pantheonsite.io\/\/composite.php?bg=sunrise.png\" alt=\"composite\"\/>\n<\/div>\n\n<p>\n<form action=\"https:\/\/v55-amadioha-24.pantheonsite.io\/\/imagick.php\" method=\"post\">\n  <input type='radio' name='bg' value='sunrise.png' checked> Sunrise<br><input type='radio' name='bg' value='snow.png' > Snow<br><input type='radio' name='bg' value='flowers.png' > Flowers<br><input type='radio' name='bg' value='lava.jpg' > Lava<br>  <p>\n    <input type=\"submit\" value=\"Update\"\/>\n  <\/p>\n<\/form>\n<\/p>\n"
+}

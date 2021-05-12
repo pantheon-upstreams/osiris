@@ -1,0 +1,22 @@
+<?php
+
+require_once( __DIR__ . "/src/Osiris/PHPInfo.php");
+
+\Pantheon\Osiris\PHPInfo::getCacheControl();
+
+try {
+  // Let's target an image, copy it, rotate it, and save it
+  $img = imagecreatefrompng(__DIR__ . "/images/flowers.png");
+  $imgRotated = imagerotate($img, 45, -1);
+  header('Content-Type: image/png');
+
+  imagepng($imgRotated);
+  imagedestroy($imgRotated);
+
+} catch (\Exception $e) {
+  echo print($e->getMessage());
+} catch (\Throwable $t) {
+  echo print($t->getMessage());
+}
+
+

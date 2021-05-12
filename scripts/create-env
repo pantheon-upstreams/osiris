@@ -1,0 +1,95 @@
+#!/usr/bin/env php
+<?php
+
+/**
+ * create-env
+ *
+ * Create a new PHP environment for php-info.pantheonsite.io.
+ *
+ * Whenever a new PHP version is added to the platform, this script
+ * should be ran to create a new multidev environment for the new PHP
+ * version. The script should be called twice: once with and once
+ * without the --stage option.
+ *
+ * This will create:
+ *
+ *  - http://v71-php-info.pantheonsite.io/
+ *  - http://v71-stage-php-info.pantheonsite.io/
+ *
+ * The "stage" sites must be moved to the Yolo endpoint manually.
+ *
+ * Usage:
+ *
+ * ./scripts/create-env --version=7.2 [--stage]
+ *
+ */
+
+$options = getopt(
+  "dv",
+  [
+    'version:',
+    'yolo',
+    'stage',
+  ]
+) + [
+  'version' => '',
+];
+
+$user_version = $options['version'];
+$yolo = isset($options['yolo']) || isset($options['stage']);
+
+// Split the user version on the dots, ignoring non-numeric parts
+$user_version = preg_replace('#[^0-9.]*#m', '', $user_version);
+$version_parts = explode('.', $user_version);
+if (count($version_parts) != 2) {
+  print "Error: must specify --version=X.Y, where X is the major and Y is the minor php version\n";
+  exit(1);
+}
+
+// $user_version: "7.1"
+// $short_version: "71"
+// $multidev: "v71" or "v71-stage"
+$short_version = $version_parts[0] . $version_parts[1];
+$multidev = "v$short_version";
+if ($yolo) {
+  $multidev .= "-stage";
+}
+
+// Create the new environment
+do_passthru("terminus env:create  $multidev -y");
+
+// Fetch the git branch for the new environment
+fetch_environment_branch($multidev);
+
+// Change php version in pantheon.yml
+$pantheon_yml = file_get_contents('pantheon.yml');
+$pantheon_yml = preg_replace("#^php_version: .*#m", "php_version: $user_version", $pantheon_yml);
+file_put_contents('pantheon.yml', $pantheon_yml);
+
+// Commit and push pantheon.yml
+do_passthru("git add pantheon.yml");
+do_passthru("git commit -m 'PHP version $user_version'");
+do_passthru("git push origin $multidev");
+
+function do_passthru($cmd)
+{
+  print "### $cmd\n";
+  passthru($cmd, $status);
+  if ($status) {
+    exit($status);
+  }
+}
+
+function fetch_environment_branch($multidev)
+{
+  // Try to fetch the environment
+  while (true) {
+    do_passthru("git fetch origin $multidev");
+    passthru("git checkout $multidev", $status);
+    if ($status == 0) {
+      return;
+    }
+    print "No branch exists for $multidev yet; will retry in a bit.\n";
+    sleep(5);
+  }
+}

@@ -1,0 +1,161 @@
+{
+    "name": "pantheon-upstreams/osiris",
+    "description": "Judge of the living and the dead.",
+    "type": "project",
+    "prefer-stable": true,
+    "minimum-stability": "dev",
+    "license": "MIT",
+    "require": {
+        "composer/composer": "^2.0",
+        "drush/drush": "^10",
+        "guzzlehttp/guzzle": "^6",
+        "html-elements/smart-webcomponents": "*",
+        "pantheon-upstreams/upstream-configuration": "*",
+        "psr/http-client": "^1.0",
+        "squizlabs/php_codesniffer": "^4",
+        "symfony/yaml": "^4",
+        "twbs/bootstrap": "dev-main"
+    },
+    "conflict": {
+        "drupal/drupal": "*"
+    },
+    "scripts": {
+        "post-install-cmd": [
+            "bash devops/setup-precommit.sh",
+            "\\Pantheon\\Osiris\\BuildScript::postInstall"
+        ],
+        "post-update-cmd": [
+            "bash devops/setup-precommit.sh",
+            "\\Pantheon\\Osiris\\BuildScript::postUpdate"
+        ],
+        "ensure": [
+            "\\Pantheon\\Osiris\\BuildScript::ensureVersionEnvironments"
+        ],
+        "update-example-responses": [
+            "\\Pantheon\\Osiris\\BuildScript::updateExampleResponses"
+        ],
+        "code:fix": [
+            "phpcbf -q --standard=psr2 web/src/Osiris"
+        ],
+        "code:lint": [
+            "vendor/bin/phpcs --standard=psr2 web/src/Osiris"
+        ],
+        "pre-commit": [
+            "composer validate -q",
+            "composer update --with-dependencies",
+            "@code:fix",
+            "@code:lint"
+        ],
+        "test": [
+            "phpunit"
+        ]
+    },
+    "repositories": {
+        "composer": {
+            "type": "composer",
+            "url": "https://packages.drupal.org/8"
+        },
+        "assets": {
+            "type": "composer",
+            "url": "https://asset-packagist.org"
+        },
+        "upstream": {
+            "type": "path",
+            "url": "upstream-configuration"
+        },
+        "smart-webcomponents": {
+            "type": "package",
+            "package": {
+                "name": "html-elements/smart-webcomponents",
+                "version": "master",
+                "type": "drupal-library",
+                "source": {
+                    "url": "https://github.com/HTMLElements/smart-webcomponents.git",
+                    "type": "git",
+                    "reference": "master"
+                }
+            }
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Pantheon\\Osiris\\": "web/src/Osiris",
+            "Pantheon\\HTML\\": "web/src/HTML"
+        }
+    },
+    "extra": {
+        "installer-types": [
+            "npm-asset",
+            "bower-asset",
+            "drupal-drush",
+            "drupal-module",
+            "drupal-profile",
+            "quicksilver-script",
+            "drupal-core"
+        ],
+        "osiris": {
+            "supported_versions": [
+                "v53",
+                "v55",
+                "v56",
+                "v70",
+                "v71",
+                "v72",
+                "v73",
+                "v74"
+            ],
+            "organization": "5ae1fa30-8cc4-4894-8ca9-d50628dcba17"
+        },
+        "installer-paths": {
+            "web/core": [
+                "type:drupal-core"
+            ],
+            "web/libraries/{$name}": [
+                "type:drupal-library",
+                "type:bower-asset",
+                "type:npm-asset"
+            ],
+            "web/modules/composer/{$name}": [
+                "type:drupal-module"
+            ],
+            "web/profiles/composer/{$name}": [
+                "type:drupal-profile"
+            ],
+            "web/themes/composer/{$name}": [
+                "type:drupal-theme"
+            ],
+            "drush/Commands/contrib/{$name}": [
+                "type:drupal-drush"
+            ],
+            "web/private/scripts/quicksilver/{$name}/": [
+                "type:quicksilver-script"
+            ]
+        },
+        "composer-exit-on-patch-failure": true,
+        "patchLevel": {
+            "drupal/core": "-p2"
+        },
+        "drupal-scaffold": {
+            "allowed-packages": [
+                "pantheon-systems/drupal-integrations"
+            ],
+            "locations": {
+                "web-root": "./web"
+            },
+            "file-mapping": {
+                "[project-root]/.editorconfig": false,
+                "[project-root]/pantheon.upstream.yml": false,
+                "[project-root]/.gitattributes": false
+            }
+        }
+    },
+    "config": {
+        "optimize-autoloader": true,
+        "process-timeout": 0,
+        "preferred-install": "dist",
+        "sort-packages": true
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.5"
+    }
+}

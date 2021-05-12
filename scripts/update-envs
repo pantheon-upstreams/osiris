@@ -1,0 +1,53 @@
+#!/usr/bin/env php
+<?php
+
+/**
+ * update-envs
+ *
+ * Update all of the php version environments with the most recent
+ * changes to the dev environment of the php-info site.
+ *
+ * Usage:
+ *
+ * ./scripts/update-envs
+ *
+ */
+
+exec('terminus env:list php-info --field=id', $output_lines, $status);
+if ($status) {
+  exit($status);
+}
+
+$output_lines = array_filter(
+  $output_lines,
+  function ($line) {
+    return preg_match('#^v[0-9][0-9]#', $line);
+  }
+);
+
+sort($output_lines);
+
+foreach($output_lines as $php_version_env) {
+  print "::\n";
+  print ":: Updating $php_version_env\n";
+  print "::\n";
+
+  $version = preg_replace('#^v([0-9])([0-9]).*#', '\1.\2', $php_version_env);
+  print "php version for $php_version_env is $version\n";
+
+  passthru("git checkout $php_version_env");
+  passthru("git pull");
+  passthru("git merge master -Xtheirs");
+
+  $pantheon_yml = file_get_contents('pantheon.yml');
+  $pantheon_yml = preg_replace('#php_version:.*#', 'php_version: ' . $version, $pantheon_yml);
+  file_put_contents('pantheon.yml', $pantheon_yml);
+
+  passthru("git add pantheon.yml");
+  passthru("git commit -m 'Update php version in pantheon.yml'");
+  passthru("git push");
+
+}
+
+passthru('git checkout master');
+

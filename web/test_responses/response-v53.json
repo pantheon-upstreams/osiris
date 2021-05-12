@@ -1,0 +1,1094 @@
+{
+  "modules": {
+    "apc": {
+      "version": [
+        "3.1.9"
+      ],
+      "apc debugging": [
+        false
+      ],
+      "mmap support": [
+        true
+      ],
+      "mmap file mask": [
+        "no value"
+      ],
+      "locking type": [
+        "pthread mutex locks"
+      ],
+      "credits": [
+        "serialization support",
+        "broken"
+      ],
+      "revision": [
+        "$revision: 308812 $"
+      ],
+      "build date": [
+        "apr 14 2021 17:36:30"
+      ]
+    },
+    "apcu": {
+      "version": [
+        "4.0.11"
+      ],
+      "apcu debugging": [
+        false
+      ],
+      "mmap support": [
+        true
+      ],
+      "mmap file mask": [
+        "no value"
+      ],
+      "credits": [
+        "apc.use_request_time",
+        true,
+        true
+      ],
+      "revision": [
+        "$revision: 328290 $"
+      ],
+      "build date": [
+        "apr 14 2021 17:32:31"
+      ],
+      "apc.enable_cli": [
+        false,
+        false
+      ],
+      "apc.enabled": [
+        true,
+        true
+      ],
+      "apc.gc_ttl": [
+        "3600",
+        "3600"
+      ],
+      "apc.rfc1867": [
+        false,
+        false
+      ],
+      "apc.rfc1867_ttl": [
+        "3600",
+        "3600"
+      ],
+      "apc.serializer": [
+        "php",
+        "php"
+      ],
+      "apc.shm_size": [
+        "128m",
+        "128m"
+      ],
+      "apc.smart": [],
+      "apc.ttl": [
+        "7200",
+        "7200"
+      ],
+      "apc.writable": [
+        "\/tmp",
+        "\/tmp"
+      ]
+    },
+    "apm": {
+      "apm support": [
+        true
+      ],
+      "version": [
+        "1.0.0beta2"
+      ],
+      "credits": [
+        "apm.stacktrace_enabled",
+        true,
+        true
+      ],
+      "apm.enabled": [
+        true,
+        true
+      ],
+      "apm.http_server": [
+        "https:\/\/api.live.getpantheon.com:8443\/sites\/d39cf6dc-c1be-405c-b387-209f8f4419fa\/environments\/v53\/events",
+        "https:\/\/api.live.getpantheon.com:8443\/sites\/d39cf6dc-c1be-405c-b387-209f8f4419fa\/environments\/v53\/events"
+      ]
+    },
+    "bcmath": {
+      "bcmath support": [
+        true
+      ],
+      "bcmath.scale": []
+    },
+    "bz2": {
+      "bzip2 support": [
+        true
+      ],
+      "credits": [
+        "stream filter support",
+        "bzip2.decompress, bzip2.compress"
+      ],
+      "bzip2 version": [
+        "1.0.6, 6-sept-2010"
+      ]
+    },
+    "calendar": {
+      "credits": [
+        "calendar support",
+        true
+      ]
+    },
+    "cgi-fcgi": {
+      "php-fpm": [
+        "active"
+      ],
+      "credits": [
+        "fastcgi.error_header",
+        "no value",
+        "no value"
+      ],
+      "cgi.nph": [],
+      "fastcgi.logging": [
+        "1",
+        "1"
+      ],
+      "fpm.config": [
+        "no value",
+        "no value"
+      ]
+    },
+    "core": {
+      "php version": [
+        "5.3.29"
+      ],
+      "credits": [
+        "xmlrpc_error_number"
+      ],
+      "allow_url_fopen": [
+        true,
+        true
+      ],
+      "asp_tags": [
+        false,
+        false
+      ],
+      "browscap": [
+        "no value",
+        "no value"
+      ],
+      "default_charset": [
+        "utf-8",
+        "utf-8"
+      ],
+      "disable_classes": [
+        "no value",
+        "no value"
+      ],
+      "display_errors": [
+        true,
+        true
+      ],
+      "doc_root": [
+        "no value",
+        "no value"
+      ],
+      "docref_ext": [
+        "no value",
+        "no value"
+      ],
+      "docref_root": [
+        "no value",
+        "no value"
+      ],
+      "enable_dl": [
+        false,
+        false
+      ],
+      "error_log": [
+        "\/logs\/php\/php-error.log",
+        "\/logs\/php\/php-error.log"
+      ],
+      "error_reporting": [
+        "22527",
+        "22527"
+      ],
+      "exit_on_timeout": [
+        false,
+        false
+      ],
+      "expose_php": [
+        false,
+        false
+      ],
+      "extension_dir": [
+        "\/php",
+        "\/php"
+      ],
+      "file_uploads": [
+        true,
+        true
+      ],
+      "highlight.bg": [
+        "#ffffff",
+        "#ffffff"
+      ],
+      "highlight.html": [
+        "#000000",
+        "#000000"
+      ],
+      "html_errors": [
+        false,
+        false
+      ],
+      "implicit_flush": [
+        false,
+        false
+      ],
+      "include_path": [
+        ".:\/usr\/share\/pear:\/usr\/share\/php",
+        ".:\/usr\/share\/pear:\/usr\/share\/php"
+      ],
+      "log_errors": [
+        true,
+        true
+      ],
+      "mail.log": [
+        "no value",
+        "no value"
+      ],
+      "max_input_time": [
+        "900",
+        "900"
+      ],
+      "max_input_vars": [
+        "10000",
+        "10000"
+      ],
+      "memory_limit": [
+        "256m",
+        "256m"
+      ],
+      "open_basedir": [
+        "no value",
+        "no value"
+      ],
+      "output_handler": [
+        "no value",
+        "no value"
+      ],
+      "post_max_size": [
+        "100m",
+        "100m"
+      ],
+      "precision": [
+        "14",
+        "14"
+      ],
+      "report_memleaks": [
+        true,
+        true
+      ],
+      "request_order": [
+        "gp",
+        "gp"
+      ],
+      "safe_mode": [
+        false,
+        false
+      ],
+      "safe_mode_gid": [
+        false,
+        false
+      ],
+      "sendmail_from": [
+        "no value",
+        "no value"
+      ],
+      "sendmail_path": [
+        "\/usr\/sbin\/sendmail\u00a0-t\u00a0-i\u00a0",
+        "\/usr\/sbin\/sendmail\u00a0-t\u00a0-i\u00a0"
+      ],
+      "short_open_tag": [
+        false,
+        false
+      ],
+      "smtp": [
+        "localhost",
+        "localhost"
+      ],
+      "smtp_port": [
+        "25",
+        "25"
+      ],
+      "sql.safe_mode": [
+        false,
+        false
+      ],
+      "track_errors": [
+        false,
+        false
+      ],
+      "upload_tmp_dir": [
+        "no value",
+        "no value"
+      ],
+      "user_dir": [
+        "no value",
+        "no value"
+      ],
+      "variables_order": [
+        "gpcs",
+        "gpcs"
+      ],
+      "xmlrpc_errors": [
+        false,
+        false
+      ],
+      "y2k_compliance": [
+        true,
+        true
+      ],
+      "zend.enable_gc": [
+        true,
+        true
+      ]
+    },
+    "ctype": {
+      "ctype functions": [
+        true
+      ]
+    },
+    "curl": {
+      "curl support": [
+        true
+      ],
+      "credits": [
+        "curl information",
+        "7.61.1"
+      ],
+      "age": [
+        "4"
+      ],
+      "features": [],
+      "asynchdns": [
+        "yes"
+      ],
+      "debug": [
+        "no"
+      ],
+      "gss-negotiate": [
+        "no"
+      ],
+      "idn": [
+        "yes"
+      ],
+      "ipv6": [
+        "yes"
+      ],
+      "largefile": [
+        "yes"
+      ],
+      "ntlm": [
+        "yes"
+      ],
+      "spnego": [
+        "yes"
+      ],
+      "ssl": [
+        "yes"
+      ],
+      "sspi": [
+        "no"
+      ],
+      "krb4": [
+        "no"
+      ],
+      "libz": [
+        "yes"
+      ],
+      "charconv": [
+        "no"
+      ],
+      "protocols": [
+        "dict, file, ftp, ftps, gopher, http, https, imap, imaps, ldap, ldaps, pop3, pop3s, rtsp, scp, sftp, smb, smbs, smtp, smtps, telnet, tftp"
+      ],
+      "host": [
+        "x86_64-redhat-linux-gnu"
+      ],
+      "ssl version": [
+        "openssl\/1.1.1g"
+      ],
+      "zlib version": [
+        "1.2.11"
+      ],
+      "libssh version": [
+        "libssh\/0.9.4\/openssl\/zlib"
+      ]
+    },
+    "date": {
+      "credits": [
+        "date.sunset_zenith",
+        "90.583333",
+        "90.583333"
+      ],
+      "date.timezone": [
+        "utc",
+        "utc"
+      ]
+    },
+    "dom": {
+      "dom\/xml": [
+        true
+      ],
+      "credits": [
+        "xpointer support",
+        true
+      ],
+      "libxml version": [
+        "2.9.7"
+      ],
+      "html support": [
+        true
+      ],
+      "xpath support": [
+        true
+      ],
+      "schema support": [
+        true
+      ],
+      "relaxng support": [
+        true
+      ]
+    },
+    "ereg": {
+      "regex library": [
+        "bundled library enabled"
+      ]
+    },
+    "exif": {
+      "exif support": [
+        true
+      ],
+      "exif version": [
+        "1.4 $id$"
+      ],
+      "credits": [
+        "exif.encode_unicode",
+        "iso-8859-15",
+        "iso-8859-15"
+      ],
+      "exif.encode_jis": [
+        "no value",
+        "no value"
+      ]
+    },
+    "fileinfo": {
+      "credits": [
+        "fileinfo support",
+        true
+      ],
+      "version": [
+        "1.0.5-dev"
+      ]
+    },
+    "filter": {
+      "credits": [
+        "filter.default_flags",
+        "no value",
+        "no value"
+      ],
+      "revision": [
+        "$id: 209a1c3c98c04a5474846e7bbe8ca72054ccfd4f $"
+      ],
+      "filter.default": [
+        "unsafe_raw",
+        "unsafe_raw"
+      ]
+    },
+    "ftp": {
+      "ftp support": [
+        true
+      ]
+    },
+    "gd": {
+      "gd support": [
+        true
+      ],
+      "gd version": [
+        "bundled (2.1.0 compatible)"
+      ],
+      "credits": [
+        "gd.jpeg_ignore_warning"
+      ],
+      "t1lib support": [
+        true
+      ],
+      "jpeg support": [
+        true
+      ],
+      "libjpeg version": [
+        "6b"
+      ],
+      "png support": [
+        true
+      ],
+      "libpng version": [
+        "1.6.34"
+      ],
+      "wbmp support": [
+        true
+      ],
+      "xpm support": [
+        true
+      ],
+      "libxpm version": [
+        "30411"
+      ],
+      "xbm support": [
+        true
+      ]
+    },
+    "gettext": {
+      "gettext support": [
+        true
+      ]
+    },
+    "gmp": {
+      "gmp support": [
+        true
+      ],
+      "gmp version": [
+        "6.1.2"
+      ]
+    },
+    "hash": {
+      "hash support": [
+        true
+      ],
+      "hashing engines": [
+        "md2 md4 md5 sha1 sha224 sha256 sha384 sha512 ripemd128 ripemd160 ripemd256 ripemd320 whirlpool tiger128,3 tiger160,3 tiger192,3 tiger128,4 tiger160,4 tiger192,4 snefru snefru256 gost adler32 crc32 crc32b salsa10 salsa20 haval128,3 haval160,3 haval192,3 haval224,3 haval256,3 haval128,4 haval160,4 haval192,4 haval224,4 haval256,4 haval128,5 haval160,5 haval192,5 haval224,5 haval256,5"
+      ]
+    },
+    "iconv": {
+      "iconv support": [
+        true
+      ],
+      "credits": [
+        "iconv.output_encoding",
+        "iso-8859-1",
+        "iso-8859-1"
+      ]
+    },
+    "imagick": {
+      "credits": [
+        "imagick.progress_monitor"
+      ],
+      "imagick classes": [
+        "imagick, imagickdraw, imagickpixel, imagickpixeliterator"
+      ]
+    },
+    "imap": {
+      "credits": [
+        "kerberos support",
+        true
+      ],
+      "ssl support": [
+        true
+      ]
+    },
+    "intl": {
+      "version": [
+        "1.1.0"
+      ],
+      "icu version": [
+        "60.3"
+      ],
+      "credits": [
+        "intl.error_level"
+      ]
+    },
+    "json": {
+      "json support": [
+        true
+      ],
+      "json version": [
+        "1.2.1"
+      ]
+    },
+    "ldap": {
+      "ldap support": [
+        true
+      ],
+      "rcs version": [
+        "$id$"
+      ],
+      "total links": [
+        "0\/unlimited"
+      ],
+      "api version": [
+        "3001"
+      ],
+      "vendor name": [
+        "openldap"
+      ],
+      "vendor version": [
+        "20446"
+      ],
+      "ldap.max_links": [
+        "unlimited",
+        "unlimited"
+      ]
+    },
+    "libxml": {
+      "libxml support": [
+        "active"
+      ],
+      "credits": [
+        "libxml loaded version",
+        "20907"
+      ],
+      "libxml streams": [
+        true
+      ]
+    },
+    "mbstring": {
+      "credits": [
+        "mbstring.substitute_character",
+        "no value",
+        "no value"
+      ]
+    },
+    "mcrypt": {
+      "version": [
+        "2.5.8"
+      ],
+      "api no": [
+        "20021217"
+      ],
+      "credits": [
+        "mcrypt.modes_dir",
+        "no value",
+        "no value"
+      ],
+      "supported modes": [
+        "cbc cfb ctr ecb ncfb nofb ofb stream"
+      ]
+    },
+    "mhash": {
+      "mhash support": [
+        true
+      ],
+      "credits": [
+        "mhash api version",
+        "emulated support"
+      ]
+    },
+    "mysql": {
+      "credits": [
+        "mysql.trace_mode",
+        false,
+        false
+      ],
+      "active links": [],
+      "mysql.max_links": [
+        "unlimited",
+        "unlimited"
+      ]
+    },
+    "mysqli": {
+      "credits": [
+        "mysqli.reconnect",
+        false,
+        false
+      ],
+      "active links": []
+    },
+    "mysqlnd": {
+      "version": [
+        "mysqlnd 5.0.8-dev - 20102224 - $id: 731e5b87ba42146a687c29995d2dfd8b4e40b325 $"
+      ],
+      "compression": [
+        "supported"
+      ],
+      "ssl": [
+        "supported"
+      ],
+      "credits": [
+        "bytes_received_real_data_ps"
+      ],
+      "read timeout": [
+        "31536000"
+      ],
+      "tracing": [
+        "n\/a"
+      ],
+      "bytes_sent": [],
+      "bytes_received": [],
+      "packets_sent": [],
+      "no_index_used": [],
+      "bad_index_used": [],
+      "slow_queries": [],
+      "buffered_sets": [],
+      "unbuffered_sets": [],
+      "flushed_ps_sets": [],
+      "rows_skipped_ps": [],
+      "connect_success": [],
+      "connect_failure": [],
+      "reconnect": [],
+      "explicit_close": [],
+      "implicit_close": [],
+      "mem_efree_count": [],
+      "mem_free_count": [],
+      "mem_free_amount": [],
+      "com_quit": [],
+      "com_init_db": [],
+      "com_query": [],
+      "com_field_list": [],
+      "com_create_db": [],
+      "com_drop_db": [],
+      "com_refresh": [],
+      "com_shutdown": [],
+      "com_statistics": [],
+      "com_connect": [],
+      "com_debug": [],
+      "com_ping": [],
+      "com_time": [],
+      "com_change_user": [],
+      "com_binlog_dump": [],
+      "com_table_dump": [],
+      "com_connect_out": [],
+      "com_stmt_close": [],
+      "com_stmt_reset": [],
+      "com_stmt_fetch": [],
+      "com_deamon": []
+    },
+    "oauth": {
+      "credits": [
+        "request engine support",
+        "php_streams, curl"
+      ],
+      "source version": [
+        "$id: oauth.c 325799 2012-05-24 21:07:51z jawed $"
+      ],
+      "version": [
+        "1.2.3"
+      ]
+    },
+    "odbc": {
+      "credits": [
+        "odbc.max_persistent",
+        "unlimited",
+        "unlimited"
+      ],
+      "active links": [],
+      "odbc library": [
+        "unixodbc"
+      ],
+      "odbc_include": [
+        "-i\/usr\/include"
+      ],
+      "odbc_lflags": [
+        "-l\/usr\/lib64"
+      ],
+      "odbc_libs": [
+        "-lodbc"
+      ],
+      "odbc.default_db": [
+        "no value",
+        "no value"
+      ],
+      "odbc.default_pw": [
+        "no value",
+        "no value"
+      ],
+      "odbc.defaultlrl": [
+        "return up to 4096 bytes",
+        "return up to 4096 bytes"
+      ],
+      "odbc.max_links": [
+        "unlimited",
+        "unlimited"
+      ]
+    },
+    "openssl": {
+      "openssl support": [
+        true
+      ],
+      "credits": [
+        "openssl header version",
+        "openssl 1.0.2o-fips  27 mar 2018"
+      ]
+    },
+    "pcre": {
+      "credits": [
+        "pcre.recursion_limit",
+        "100000",
+        "100000"
+      ]
+    },
+    "pdo": {
+      "pdo drivers": [
+        "mysql, pgsql, sqlite, sqlite2"
+      ]
+    },
+    "pdo_mysql": {
+      "credits": [
+        "pdo_mysql.default_socket",
+        "\/var\/lib\/mysql\/mysql.sock",
+        "\/var\/lib\/mysql\/mysql.sock"
+      ]
+    },
+    "pdo_pgsql": {
+      "credits": [
+        "postgresql(libpq) version",
+        "12.4"
+      ],
+      "module version": [
+        "1.0.2"
+      ],
+      "revision": [
+        "$id$"
+      ]
+    },
+    "pdo_sqlite": {
+      "sqlite library": [
+        "3.7.7.1"
+      ]
+    },
+    "pgsql": {
+      "credits": [
+        "pgsql.max_persistent",
+        "unlimited",
+        "unlimited"
+      ],
+      "ssl support": [
+        false
+      ],
+      "active links": [],
+      "pgsql.max_links": [
+        "unlimited",
+        "unlimited"
+      ]
+    },
+    "phar": {
+      "credits": [
+        "phar.require_hash",
+        true,
+        true
+      ],
+      "svn revision": [
+        "$id: 21d763042eb5769ae0a09dc1118df2b5aae6fb33 $"
+      ],
+      "phar.cache_list": [
+        "no value",
+        "no value"
+      ],
+      "phar.readonly": [
+        true,
+        true
+      ]
+    },
+    "redis": {
+      "redis version": [
+        "2.2.5"
+      ]
+    },
+    "reflection": {
+      "version": [
+        "$id: 4af6c4c676864b1c0bfa693845af0688645c37cf $"
+      ]
+    },
+    "session": {
+      "session support": [
+        true
+      ],
+      "credits": [
+        "session.use_trans_sid"
+      ],
+      "session.name": [
+        "phpsessid",
+        "phpsessid"
+      ]
+    },
+    "shmop": {
+      "shmop support": [
+        true
+      ]
+    },
+    "simplexml": {
+      "revision": [
+        "$id: 02ab7893b36d51e9c59da77d7e287eb3b35e1e32 $"
+      ],
+      "schema support": [
+        true
+      ]
+    },
+    "soap": {
+      "soap client": [
+        true
+      ],
+      "soap server": [
+        true
+      ],
+      "soap.wsdl_cache": [
+        "1",
+        "1"
+      ],
+      "credits": [
+        "soap.wsdl_cache_ttl",
+        "86400",
+        "86400"
+      ]
+    },
+    "sockets": {
+      "sockets support": [
+        true
+      ]
+    },
+    "spl": {
+      "interfaces": [
+        "countable, outeriterator, recursiveiterator, seekableiterator, splobserver, splsubject"
+      ],
+      "classes": [
+        "appenditerator, arrayiterator, arrayobject, badfunctioncallexception, badmethodcallexception, cachingiterator, directoryiterator, domainexception, emptyiterator, filesystemiterator, filteriterator, globiterator, infiniteiterator, invalidargumentexception, iteratoriterator, lengthexception, limititerator, logicexception, multipleiterator, norewinditerator, outofboundsexception, outofrangeexception, overflowexception, parentiterator, rangeexception, recursivearrayiterator, recursivecachingiterator, recursivedirectoryiterator, recursivefilteriterator, recursiveiteratoriterator, recursiveregexiterator, recursivetreeiterator, regexiterator, runtimeexception, spldoublylinkedlist, splfileinfo, splfileobject, splfixedarray, splheap, splminheap, splmaxheap, splobjectstorage, splpriorityqueue, splqueue, splstack, spltempfileobject, underflowexception, unexpectedvalueexception"
+      ]
+    },
+    "sqlite": {
+      "credits": [
+        "sqlite.assoc_case"
+      ],
+      "sqlite library": [
+        "2.8.17"
+      ],
+      "sqlite encoding": [
+        "iso8859"
+      ]
+    },
+    "sqlite3": {
+      "credits": [
+        "sqlite3.extension_dir",
+        "no value",
+        "no value"
+      ],
+      "sqlite library": [
+        "3.7.7.1"
+      ]
+    },
+    "standard": {
+      "credits": [
+        "url_rewriter.tags",
+        "a=href,area=href,frame=src,form=,fieldset=",
+        "a=href,area=href,frame=src,form=,fieldset="
+      ],
+      "assert.active": [],
+      "assert.bail": [],
+      "assert.callback": [
+        "no value",
+        "no value"
+      ],
+      "assert.warning": [
+        "1",
+        "1"
+      ],
+      "from": [
+        "no value",
+        "no value"
+      ],
+      "user_agent": [
+        "no value",
+        "no value"
+      ]
+    },
+    "tidy": {
+      "libtidy release": [
+        "2017\/11\/25"
+      ],
+      "credits": [
+        "tidy.default_config",
+        "no value",
+        "no value"
+      ]
+    },
+    "tokenizer": {
+      "credits": [
+        "tokenizer support",
+        true
+      ]
+    },
+    "wddx": {
+      "credits": [
+        "wddx session serializer",
+        true
+      ]
+    },
+    "xml": {
+      "xml support": [
+        "active"
+      ],
+      "credits": [
+        "xml namespace support",
+        "active"
+      ],
+      "libxml2 version": [
+        "2.9.7"
+      ]
+    },
+    "xmlreader": {
+      "xmlreader": [
+        true
+      ]
+    },
+    "xmlwriter": {
+      "xmlwriter": [
+        true
+      ]
+    },
+    "xsl": {
+      "xsl": [
+        true
+      ],
+      "libxslt version": [
+        "1.1.32"
+      ],
+      "credits": [
+        "libexslt version",
+        "1.1.32"
+      ],
+      "exslt": [
+        true
+      ]
+    },
+    "zip": {
+      "zip": [
+        true
+      ],
+      "credits": [
+        "extension version",
+        "$id: b1a1a3628c4ed0ad78fb0cc4a99b06a56aa281c4 $"
+      ],
+      "zip version": [
+        "1.11.0"
+      ],
+      "libzip version": [
+        "0.10.1"
+      ]
+    },
+    "zlib": {
+      "zlib support": [
+        true
+      ],
+      "credits": [
+        "zlib.output_handler",
+        "no value",
+        "no value"
+      ],
+      "linked version": [
+        "1.2.11"
+      ]
+    },
+    "additional modules": [],
+    "php license": {
+      "credits": [
+        "this program is free software; you can redistribute it and\/or modify it under the terms of the php license as published by the php group and included in the distribution in the file:  license\n\nthis program is distributed in the hope that it will be useful, but without any warranty; without even the implied warranty of merchantability or fitness for a particular purpose.\n\nif you did not receive a copy of the php license, or have any questions about php licensing, please contact license@php.net."
+      ]
+    }
+  },
+  "gd": "<h1>Testing GD Page<\/h1>\n<img src=\"<?=$URL_PREFIX; ?>\/images\/flowers.png?<?=$blah?>\"\/>\n<br>\n<img src=\"<?=$URL_PREFIX; ?>\/rotated?<?=$blah?>\">\n",
+  "imagick": "<style type=\"text\/css\">\n  img {\n    border: 3px solid black;\n    margin: 8px;\n    vertical-align: middle;\n  }\n\n  #images {\n    font-size: 48pt;\n    font-weight: bold;\n  }\n<\/style>\n\n<div id=\"images\">\n<img src=\"<?=$bg_file?>\" alt=\"background\"\/>\n+\n<img src=\"<?=$URL_PREFIX; ?>\/images\/pantheon.png\" alt=\"pantheon\"\/>\n=\n<img src=\"<?=$URL_PREFIX; ?>\/composite.php?bg=<?=$bg?>\" alt=\"composite\"\/>\n<\/div>\n\n<p>\n<form action=\"<?=$URL_PREFIX; ?>\/imagick.php\" method=\"post\">\n  <?=$menu?>\n  <p>\n    <input type=\"submit\" value=\"Update\"\/>\n  <\/p>\n<\/form>\n<\/p>\n"
+}

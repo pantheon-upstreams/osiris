@@ -1,0 +1,25 @@
+{
+  "name": "osiris",
+  "version": "1.0.0",
+  "description": "from pantheon systems",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "i": "^0.3.6",
+    "npm": "^7.10.0",
+    "smart-webcomponents": "^9.2.85"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/pantheon-systems/osiris.git"
+  },
+  "author": "Tom Stovall",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pantheon-upstreams/amadioha/issues"
+  },
+  "homepage": "https://github.com/pantheon-upstreams/amadioha#readme"
+}
